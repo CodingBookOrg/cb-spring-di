@@ -1,5 +1,6 @@
 package org.cb.cbspringdi;
 
+import org.cb.cbspringdi.controllers.ConstructorInjectionController;
 import org.cb.cbspringdi.controllers.DIController;
 import org.cb.cbspringdi.controllers.PropertyInjectionController;
 import org.cb.cbspringdi.controllers.SetterInjectionController;
@@ -31,6 +32,10 @@ public class CbSpringDiApplication {
 		SetterInjectionController setterInjectionController =
 				(SetterInjectionController) ctx.getBean("setterInjectionController");
 		System.out.println(setterInjectionController.getDescription());
+
+		ConstructorInjectionController constructorInjectionController =
+				(ConstructorInjectionController) ctx.getBean("constructorInjectionController");
+		System.out.println(constructorInjectionController.getDescription());
 	}
 
 }
