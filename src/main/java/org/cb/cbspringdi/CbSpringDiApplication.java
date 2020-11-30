@@ -36,6 +36,9 @@ public class CbSpringDiApplication {
 
 		PrimaryController primaryController = (PrimaryController) ctx.getBean("primaryController");
 		System.out.println(primaryController.getDescription());
+
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+		System.out.println(i18nController.getDescription());
 	}
 
 }
