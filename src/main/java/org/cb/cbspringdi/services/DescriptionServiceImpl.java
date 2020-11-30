@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class DescriptionServiceImpl implements IDescriptionService {
     @Override
     public String getDescription() {
-        return "This a DI service implementation without Spring";
+        return "This a DI service implementation";
     }
 }

@@ -2,6 +2,7 @@ package org.cb.cbspringdi;
 
 import org.cb.cbspringdi.controllers.DIController;
 import org.cb.cbspringdi.controllers.PropertyInjectionController;
+import org.cb.cbspringdi.controllers.SetterInjectionController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -26,6 +27,10 @@ public class CbSpringDiApplication {
 		PropertyInjectionController propertyInjectionController =
 				(PropertyInjectionController) ctx.getBean("propertyInjectionController");
 		System.out.println(propertyInjectionController.getDescription());
+
+		SetterInjectionController setterInjectionController =
+				(SetterInjectionController) ctx.getBean("setterInjectionController");
+		System.out.println(setterInjectionController.getDescription());
 	}
 
 }
