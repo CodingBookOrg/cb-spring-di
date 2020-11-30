@@ -1,11 +1,11 @@
 package org.cb.cbspringdi.controllers;
 
-import org.cb.cbspringdi.services.IPropertyInjectionService;
+import org.cb.cbspringdi.services.IDescriptionService;
 
 public class PropertyInjectionController {
-    public IPropertyInjectionService propertyInjectionService;
+    public IDescriptionService descriptionService;
 
     public String getDescription() {
-        return propertyInjectionService.getDescription();
+        return descriptionService.getDescription();
     }
 }

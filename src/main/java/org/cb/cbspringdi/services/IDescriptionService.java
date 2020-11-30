@@ -1,5 +1,5 @@
 package org.cb.cbspringdi.services;
 
-public interface IPropertyInjectionService {
+public interface IDescriptionService {
     String getDescription();
 }

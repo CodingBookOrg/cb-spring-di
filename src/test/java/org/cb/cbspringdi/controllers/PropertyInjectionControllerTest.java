@@ -1,6 +1,6 @@
 package org.cb.cbspringdi.controllers;
 
-import org.cb.cbspringdi.services.IPropertyInjectionServiceImpl;
+import org.cb.cbspringdi.services.DescriptionServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +14,7 @@ class PropertyInjectionControllerTest {
          * We will mimic the spring context with property injection
          */
         propertyInjectionController = new PropertyInjectionController();
-        propertyInjectionController.propertyInjectionService = new IPropertyInjectionServiceImpl();
+        propertyInjectionController.descriptionService = new DescriptionServiceImpl();
     }
 
     @Test
