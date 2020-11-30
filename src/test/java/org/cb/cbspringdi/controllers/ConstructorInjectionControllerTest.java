@@ -9,6 +9,10 @@ class ConstructorInjectionControllerTest {
     private ConstructorInjectionController constructorInjectionController;
     @BeforeEach
     void setUp() {
+        /**
+         * We will mimic the spring context with property injection
+         * "Most preferred method"
+         */
         constructorInjectionController = new ConstructorInjectionController(
                 new DescriptionServiceImpl()
         );
